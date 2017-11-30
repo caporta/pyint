@@ -30,7 +30,7 @@ Organization
 
 - **namespace packages**
   - packages split across several directories (PEP420)
-  - no `__init__.py` (avoids compex initialization ordering issues)
+  - no `__init__.py` (avoids complex initialization ordering issues)
   - importing:
     1. python scans all entries in `sys.path`
     2. if a matching directory with `__init__.py` is found, a normal package is loaded
