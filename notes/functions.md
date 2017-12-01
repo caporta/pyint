@@ -37,3 +37,10 @@ Functions
     - regular args parameters defined before \*args are invoked positionally
     - regular arg parameters defined after \*args must be invoked as keyword args
     - \*\*\kwargs must come last (except if you have default args as well)
+  - can be forwarded to inner function calls
+
+- **extended actual argument syntax**
+  - _actual arguments_: arguments at the function call site
+  - \* => unpacks series type
+  - \*\* => unpacks mapping type
+  - do not necessarily correspond to their formal argument counterparts
