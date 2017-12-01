@@ -25,3 +25,15 @@ Functions
 
 - **callable() built-in**
   - returns boolean to evaluate if a given object is callable
+
+- **extended formal argument syntax**
+  - _formal arguments_: arguments at the function definition site
+  - _\*args_
+    - accepts arbitrary positional arguments
+  - _\*\*kwargs_
+    - accepts arbitrary keyword arguments
+  - these parameters are ordered
+    - \*args before \*\*kwargs
+    - regular args parameters defined before \*args are invoked positionally
+    - regular arg parameters defined after \*args must be invoked as keyword args
+    - \*\*\kwargs must come last (except if you have default args as well)
