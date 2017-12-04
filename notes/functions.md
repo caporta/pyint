@@ -4,6 +4,8 @@ Functions
 - **callable instances**
   - `__call__()`
   - can grant a class instance the ability to be called like a function
+  - helps define functions that maintain state (e.g. caches between calls)
+  - can provide attributes and methods to query and modify hidden state
 
 - **callable classes**
   - calling a class invokes the constructor
@@ -12,6 +14,9 @@ Functions
 - **conditional expression**
   - PEP308
   - `true_value if condition else false_value`
+
+- **timeit**
+  - benchmarking function
 
 - **lambdas**
   - _expression_ which evaluates to a function
@@ -24,6 +29,7 @@ Functions
   - awkward or impossible to test (so keep them simple)
 
 - **callable() built-in**
+  - predicate function
   - returns boolean to evaluate if a given object is callable
 
 - **extended formal argument syntax**
