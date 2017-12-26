@@ -1,6 +1,11 @@
 Functions
 =========
 
+- **first-class functions**
+  - functions can be treated like any other object
+    - passed as function arguments
+    - returned from functions
+
 - **callable instances**
   - `__call__()`
   - can grant a class instance the ability to be called like a function
@@ -50,3 +55,7 @@ Functions
   - \* => unpacks series type
   - \*\* => unpacks mapping type
   - do not necessarily correspond to their formal argument counterparts
+
+- **extended call syntax**
+  - Use '\*' to unpack iterable series or mappings into positional arguments
+  - Common idiom for transposition: `list(zip(*list))`
