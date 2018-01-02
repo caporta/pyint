@@ -15,3 +15,6 @@ def my_function(x, y):
   1. compiles base function
   2. passes base function to decorator
   3. binds return value of the decorator to the name of the base function
+
+- multiple decorators can be applied to the same function
+  - processed in _reverse order_

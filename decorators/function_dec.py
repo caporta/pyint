@@ -5,20 +5,20 @@ scalability and maintainability.
 
 using a decorator solves for this.
 """
-def encode_unicode(fn):
+def escape_unicode(fn):
     def wrap(*args, **kwargs):
         x = fn(*args, **kwargs)
         return ascii(x)
     return wrap
 
-@encode_unicode
+@escape_unicode
 def vegetable():
     return 'blomkål'
 
-@encode_unicode
+@escape_unicode
 def animal():
     return 'bjørn'
 
-@encode_unicode
+@escape_unicode
 def mineral():
     return 'stål'
