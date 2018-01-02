@@ -18,3 +18,9 @@ def my_function(x, y):
 
 - multiple decorators can be applied to the same function
   - processed in _reverse order_
+
+- naive decorators can _lose important metadata_
+  - `functools.wraps()` properly updates metadata on wrapped functions
+
+- useful as _function argument validators_
+  - factory functions that return decorators (that return wrappers...)
