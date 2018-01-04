@@ -23,3 +23,6 @@ Class Attributes & Methods
   - Use when:
     - Requires access to the class object to call other class methods or the constructor
     - Factory functions
+  - _Can be overridden in subclasses_
+    - For polymorphic dispatching of class methods, method **must be called on `self`**
+    - In turn, calling classmethods on `ClassName` prevents overriding
