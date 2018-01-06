@@ -26,3 +26,7 @@ Class Attributes & Methods
   - _Can be overridden in subclasses_
     - For polymorphic dispatching of class methods, method **must be called on `self`**
     - In turn, calling classmethods on `ClassName` prevents overriding
+
+- **setting & getting**
+  - leverages encapsulation
+  - idiomatic when defined using `@property` (getter) & `@{propname}.setter` decorators
