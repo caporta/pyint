@@ -29,4 +29,6 @@ Class Attributes & Methods
 
 - **setting & getting**
   - leverages encapsulation
-  - idiomatic when defined using `@property` (getter) & `@{propname}.setter` decorators
+  - idiomatic when defined using `@property` (getter) & `@propname.setter` decorators
+  - overriding a setter in a derived class involves qualifying prop with base class name
+    - e.g. `@BaseClassName.propname.setter
