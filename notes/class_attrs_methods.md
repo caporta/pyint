@@ -32,3 +32,5 @@ Class Attributes & Methods
   - idiomatic when defined using `@property` (getter) & `@propname.setter` decorators
   - overriding a setter in a derived class involves qualifying prop with base class name
     - e.g. `@BaseClassName.propname.setter
+    - this behavior can get complex across larger inheritence hierarchies
+      - refactor this setter/getter complexity with Template Method design pattern
