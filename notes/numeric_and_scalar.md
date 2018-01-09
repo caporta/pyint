@@ -73,3 +73,24 @@ _ **float**
   - _`int(x, base)`_ => bases 2 to 36
     - defaults to base 10
     - unary is not supported
+
+- **datetime**
+  - std library module
+  - _immutable instances_
+  - types:
+    - **date** — proleptic Gregorian calendar
+      - year | month | day
+    - **time** — ideal day time (ignoring leap seconds)
+      - hour | minute | second | microsecond
+      - can be in either `naive` or `aware` modes
+        - `aware` times contain knowledge of timezones & daylight savings
+          - via `tzinfo` (abstract) & `timezone` (`utcoffset()`)
+    - **datetime** — composite of `date` and `time` types
+    - **timedelta** — duration expressing diff between `date` or `datetime` instances
+      - constructor accepts and _sums_:
+        - days | seconds | microseconds | milliseconds | minutes | hours | weeks
+      - instances _store_ only:
+        - days | seconds | microseconds
+  - does not provide exhaustive timezone data; for this, use one of the following libs:
+    - pytz
+    - python-dateutil
